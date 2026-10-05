@@ -1,8 +1,8 @@
 # SignalWatch Live Operations Dashboard
 
-SignalWatch is a responsive React dashboard for monitoring a continuous stream of infrastructure events. It summarizes event volume and service health, plots a selected metric over time, and provides searchable status context through a filterable and sortable event table.
+SignalWatch is a responsive React dashboard for monitoring a continuous stream of infrastructure events. It summarizes event volume and service health, plots a selected metric over time, and provides status context through a filterable and sortable event table.
 
-The project uses a simulated stream so it runs locally without a backend or credentials. Stream handling is isolated in a service and hook, incoming payloads are validated, updates are batched, and the in-memory event buffer is capped at 200 entries.
+The project uses a simulated stream so it runs locally without a backend or credentials. Stream handling is isolated in a service and hook, incoming payloads are validated, updates are batched, and the displayed event buffer is capped at 200 entries. Separate fixed-size rolling counters track event rate and status totals without growing with the stream.
 
 ## Requirements
 
@@ -39,7 +39,9 @@ npm run lint     # Run Oxlint
 
 ```text
 src/
-  features/dashboard/       Dashboard page and dashboard-specific views
+  features/dashboard/       Dashboard shell, live-data view, and focused widgets
+    DashboardPage.tsx       Stable app-layout shell
+    DashboardLiveView.tsx   Stream subscription and live dashboard data
   hooks/useLiveStream.ts    Stream lifecycle, buffering, pause/resume, reconnection
   services/streamClient.ts  Simulated stream transport
   shared/errors/            Reusable error state

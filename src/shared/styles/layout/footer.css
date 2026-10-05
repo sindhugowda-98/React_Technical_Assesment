@@ -1,0 +1,12 @@
+.app-footer { flex: 0 0 var(--footer-size, 56px); height: var(--footer-size, 56px); padding: 0 clamp(20px, 4vw, 56px); background: #14283a; color: #a8c0c6; box-shadow: 0 -5px 18px rgb(17 47 61 / 9%); }
+.footer-inner { display: flex; align-items: center; gap: 12px; height: 100%; max-width: 1328px; margin: 0 auto; font-size: 11px; }
+.footer-brand { color: #e8f6f5; font-size: 12px; font-weight: 700; }
+.footer-description { padding-left: 12px; border-left: 1px solid #375664; }
+.footer-feed { display: inline-flex; align-items: center; gap: 7px; margin-left: auto; color: #b1c3d1; }
+.footer-feed span { width: 6px; height: 6px; border-radius: 50%; background: #54ded0; }
+
+@media (max-width: 480px) {
+  .footer-inner { justify-content: space-between; gap: 8px; }
+  .footer-description { display: none; }
+  .footer-feed { margin-left: auto; }
+}

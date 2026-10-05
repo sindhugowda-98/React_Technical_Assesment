@@ -1,0 +1,15 @@
+.error-state {
+  padding: 18px;
+  border: 1px solid #f1c7ca;
+  border-radius: 12px;
+  background: #fff7f7;
+  color: #8f3038;
+}
+.error-state h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+.error-state p {
+  margin: 0;
+  font-size: 13px;
+}

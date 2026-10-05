@@ -1,0 +1,40 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  flex: 0 0 auto;
+  height: var(--header-size, 70px);
+  padding: 0 clamp(20px, 4vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  color: #213747;
+  border-bottom: 1px solid #e5ecef;
+  box-shadow: 0 3px 12px rgb(26 52 68 / 4%);
+}
+.brand { display: inline-flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+.header-brand-group { display: flex; align-items: center; gap: 13px; }
+.sidebar-toggle.button { width: 40px; min-width: 40px; height: 40px; min-height: 40px; padding: 0; border: 1px solid #e3eaed; border-radius: 9px; color: #506775; }
+.sidebar-toggle.button:hover { border-color: #bddbd9; background: #eff9f8; color: #087f86; }
+.sidebar-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.brand-mark { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid rgb(166 234 228 / 40%); border-radius: 12px; background: linear-gradient(145deg, #23b8b0, #087f86); color: #fff; font-size: 20px; font-weight: 800; box-shadow: 0 5px 14px rgb(8 127 134 / 32%); }
+.brand-copy { display: grid; gap: 3px; }
+.brand-copy strong { font-size: 18px; font-weight: 750; letter-spacing: -.04em; }
+.brand-copy small { color: #8498a3; font-size: 9px; font-weight: 750; letter-spacing: .14em; }
+.header-context { display: inline-flex; align-items: center; gap: 9px; color: #718692; font-size: 12px; }
+.header-context-dot { width: 7px; height: 7px; border-radius: 50%; background: #54ded0; box-shadow: 0 0 0 4px rgb(84 222 208 / 15%); }
+
+@media (max-width: 480px) {
+  .app-header { height: var(--header-size, 64px); }
+  .brand-mark { width: 36px; height: 36px; }
+  .brand-copy strong { font-size: 16px; }
+  .brand-copy small { font-size: 8px; }
+  .header-context { font-size: 10px; }
+}
+
+@media (max-width: 380px) {
+  .header-context { display: none; }
+  .app-header { padding-right: 16px; padding-left: 16px; }
+}

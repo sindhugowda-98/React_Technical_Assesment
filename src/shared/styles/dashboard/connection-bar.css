@@ -1,0 +1,43 @@
+.connection-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 62px;
+  margin-bottom: 20px;
+  padding: 11px 16px;
+  border: 1px solid #dce8e8;
+  border-radius: 13px;
+  background: linear-gradient(100deg, #f4fbf9 0%, #fff 58%);
+  box-shadow: 0 4px 15px rgb(29 49 77 / 3%);
+}
+.connection-bar p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #526176;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.status-dot {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  border-radius: 50%;
+  background: #dda03b;
+  box-shadow: 0 0 0 4px rgb(221 160 59 / 12%);
+}
+.status-dot--live {
+  background: #1b9b78;
+  box-shadow: 0 0 0 4px rgb(27 155 120 / 12%);
+}
+.status-dot--paused,
+.status-dot--reconnecting {
+  background: #d99724;
+}
+.status-dot--error {
+  background: #d8515b;
+  box-shadow: 0 0 0 4px rgb(216 81 91 / 12%);
+}

@@ -1,0 +1,11 @@
+.alerts-panel .panel-heading { margin-bottom: 14px; }
+.alert-count { padding: 5px 8px; border-radius: 99px; background: #fff0e8; color: #b86628; font-size: 9px; font-weight: 750; text-transform: uppercase; white-space: nowrap; }
+.alert-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+.alert-item { display: grid; grid-template-columns: 8px minmax(0, 1fr) auto; align-items: start; gap: 9px; padding: 12px 10px; border: 1px solid #e9edef; border-radius: 9px; background: #fff; }
+.alert-indicator { width: 7px; height: 7px; margin-top: 4px; border-radius: 50%; background: #e8a52c; }
+.alert-item--critical .alert-indicator { background: #df6268; }
+.alert-copy { display: grid; min-width: 0; gap: 5px; }
+.alert-copy strong { overflow: hidden; color: #344b59; font-size: 10px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; text-transform: capitalize; }
+.alert-copy span { color: #8c9aa2; font-size: 10px; text-transform: capitalize; }
+.alert-item time { color: #9aa7ae; font-size: 9px; white-space: nowrap; }
+.alerts-empty { margin: 28px 0; color: #8a9ba4; font-size: 12px; text-align: center; }

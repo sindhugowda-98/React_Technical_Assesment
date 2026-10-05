@@ -1,0 +1,32 @@
+.app-shell {
+  --header-size: 70px;
+  --footer-size: 56px;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f2f6f7;
+}
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: #87aeb3 #edf3f4;
+  scrollbar-width: thin;
+}
+.main-content {
+  flex: 1;
+  min-width: 0;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 28px clamp(20px, 3vw, 40px) 36px;
+}
+
+@media (max-width: 760px) {
+  .main-content {
+    padding: 24px 16px;
+  }
+}

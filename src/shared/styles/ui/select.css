@@ -1,0 +1,36 @@
+.select-field {
+  display: grid;
+  min-width: 0;
+  gap: 7px;
+}
+.select-field--labeled { min-width: 180px; }
+.select-label {
+  color: #657887;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+.select-control {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  padding: 0 36px 0 13px;
+  appearance: none;
+  border: 1px solid #d7e2e7;
+  border-radius: 9px;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23657887' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  color: #273f4f;
+  box-shadow: 0 2px 7px rgb(24 54 73 / 5%);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 550;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.select-control:hover { border-color: #69b2b4; box-shadow: 0 3px 10px rgb(8 127 134 / 9%); }
+.select-control:focus-visible { outline: 3px solid rgb(16 151 157 / 18%); outline-offset: 1px; border-color: #299b9e; }
+.select-control:disabled { cursor: wait; background-color: #f2f6f7; color: #8999a1; }
+.select-control option { padding: 8px 12px; background: #fff; color: #273f4f; }

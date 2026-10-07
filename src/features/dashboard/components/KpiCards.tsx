@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo } from "react";
 
 export interface DashboardKpis {
   totalEvents: number;
@@ -60,4 +60,4 @@ export const KpiCards = memo(function KpiCards({ values }: KpiCardsProps) {
       ))}
     </section>
   );
-})
+});
